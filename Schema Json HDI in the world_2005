@@ -1,0 +1,96 @@
+{
+    "name": "HDI 2005",
+    "title": "HDI 2005",
+    "description": "Schema HDI in the world 2005",
+    "fields": [
+        {
+            "name": "HDI_Rank",
+            "title": "HDI Rank",
+            "type": "integer",
+            "description": "he HDI rank is determined using HDI values to the sixth decimal point."
+        },
+        {
+            "name": "HDI_Level",
+            "title": "HDI Level",
+            "type": "string",
+			"constraints": {
+                "enum": [
+                    "HIGH HUMAN DEVELOPMENT", 
+                    "MEDIUM HUMAN DEVELOPMENT",  
+                    "LOW HUMAN DEVELOPMENT"
+				]	
+			}	
+        },
+        {
+            "name": "Country_name",
+            "title": "Country name",
+            "type": "string",
+            "description": "The name of country"
+        },
+		{
+            "name": "Survey_Year",
+            "title": "Survey Year",
+            "type": "year",
+			"description": "The year of survey"
+        },
+        {
+            "name": "HDI_Value",
+            "title": "HDI Value",
+            "type": "number",
+            "description": "Human Development Index value"
+        },
+        {
+            "name": "Expect_Birth",
+            "title": "Life expectancy at birth",
+            "type": "number",
+            "description": "Life expectancy at birth"
+        },
+        {
+            "name": "Liter_Rate",
+            "title": "Adult literacy rate % aged 15 and above",
+            "type": "number",
+            "description": "Adult literacy rate % aged 15 and above"
+        },
+        {
+            "name": "Enrolment_Ratio%",
+            "title": "Enrolment Ratio",
+            "type": "number",
+            "description": "Combined gross enrolment ratio for primary, secondary and tertiary education %"
+        },
+        {
+            "name": "GDP_capita PPPUS$",
+            "title": "GDP per capita PPP US$",
+            "type": "number",
+            "description": "Gross Domestic Product per capita PPP US$"
+		},
+		{
+			
+			"name": "Expect_Index",
+            "title": "Life expectancy index",
+            "type": "number",
+            "description": "Life expectancy index"
+		
+		},
+		{
+			"name": "Educ_index",
+            "title": "Education index",
+            "type": "number",
+            "description": "Education index"
+		},
+		{
+		
+			"name": "GDP_Index",
+            "title": "GDP Index",
+            "type": "number",
+            "description": "Gross Domestic Product index"
+        },
+		{
+			
+			"name": "GdpHdi_rank",
+            "title": "GDP per capita PPP US$ rank minus HDI rank",
+            "type": "number",
+            "description": "A positive figure indicates that the HDI rank is higher than the GDP per capita PPP US$ rank, a negative the opposite."
+		}
+    ],
+    "missingValues": [" "]
+}
